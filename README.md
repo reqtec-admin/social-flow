@@ -32,6 +32,7 @@ Ensure you have configured DNS Entries (cloudflare)
 Restart Docker Compose
 
 ```bash
-sudo docker compose restart
-sudo docker logs -f n8n-docker-caddy-caddy-1
+sudo docker compose stop # if running
+sudo docker compose up -d
+sudo docker logs -f social-flow-caddy-caddy-1
 ```
