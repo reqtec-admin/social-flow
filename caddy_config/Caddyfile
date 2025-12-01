@@ -1,5 +1,8 @@
 n8n.reqtec.com {
-    reverse_proxy social-flow-n8n-1:5678 {
+    reverse_proxy n8n:5678 {
       flush_interval -1
+      transport http {
+        dial_timeout 5s
+      }
     }
 }
