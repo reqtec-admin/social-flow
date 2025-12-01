@@ -1,8 +1,7 @@
-# n8n-docker-caddy
+# Social Flow
 
 Get up and running with n8n on the following platforms:
 
-* [DigitalOcean tutorial](https://docs.n8n.io/hosting/server-setups/digital-ocean/)
 * [Hetzner Cloud tutorial](https://docs.n8n.io/hosting/server-setups/hetzner/)
 
 If you have questions after trying the tutorials, check out the [forums](https://community.n8n.io/).
@@ -16,4 +15,23 @@ Self-hosting n8n requires technical knowledge, including:
 * Securing servers and applications
 * Configuring n8n
 
-n8n recommends self-hosting for expert users. Mistakes can lead to data loss, security issues, and downtime. If you aren't experienced at managing servers, n8n recommends [n8n Cloud](https://n8n.io/cloud/).
+## What We Are Doing
+
+Modifying configurations for our backbone n8n system to support automated social media flows.
+
+This uses the ubuntu server on REQtec's hetzner account (n8n-social-flow).
+
+## Let's Go
+
+Edit the .env file.
+
+## DNS Setup
+
+Ensure you have configured DNS Entries (cloudflare)
+
+Restart Docker Compose
+
+```bash
+sudo docker compose restart
+sudo docker logs -f n8n-docker-caddy-caddy-1
+```
