@@ -15,6 +15,11 @@ Self-hosting n8n requires technical knowledge, including:
 * Securing servers and applications
 * Configuring n8n
 
+Hetzner:
+
+* Ubuntu Server 2404+ running in Hetzner. Firewall has port 80, 2222, 22, 443 open.
+* Follow all instructions in 'host_config'.
+
 ## What We Are Doing
 
 Modifying configurations for our backbone n8n system to support automated social media flows.
